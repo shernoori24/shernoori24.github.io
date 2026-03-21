@@ -379,6 +379,204 @@ span {
     color: var(--second-bg-color);
 }
 
+/* ========================= EXPERIENCES ========================= */
+
+.experiences {
+    background: var(--second-bg-color);
+}
+
+.experiences h2 {
+    margin-bottom: 5rem;
+}
+
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    display: flex;
+    gap: 2rem;
+    background: var(--bg-color);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    border: .2rem solid transparent;
+    transition: .3s ease;
+}
+
+.experience-item:hover {
+    border-color: var(--main-color);
+    transform: translateX(1rem);
+}
+
+.experience-icon {
+    flex-shrink: 0;
+    width: 6rem;
+    height: 6rem;
+    background: var(--second-bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-icon i {
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+.experience-content h3 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.experience-company {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--main-color);
+    font-weight: 500;
+    margin-bottom: .3rem;
+}
+
+.experience-date {
+    display: block;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, .6);
+    margin-bottom: 1rem;
+}
+
+.experience-content ul {
+    padding-left: 1.8rem;
+}
+
+.experience-content ul li {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, .85);
+}
+
+/* ========================= SKILLS ========================= */
+
+.skills {
+    background: var(--bg-color);
+}
+
+.skills h2 {
+    margin-bottom: 5rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.skills-category {
+    background: var(--second-bg-color);
+    border-radius: 1.5rem;
+    padding: 3rem 2.5rem;
+    border: .2rem solid transparent;
+    transition: .3s ease;
+}
+
+.skills-category:hover {
+    border-color: var(--main-color);
+}
+
+.skills-category h3 {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-bottom: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.skills-category h3 i {
+    font-size: 2.4rem;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.skills-tags span {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: .5rem 1.4rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    border: .1rem solid var(--main-color);
+    transition: .3s ease;
+}
+
+.skills-tags span:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+}
+
+/* ========================= LANGUAGES ========================= */
+
+.languages {
+    background: var(--second-bg-color);
+}
+
+.languages h2 {
+    margin-bottom: 5rem;
+}
+
+.languages-container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.language-item {
+    background: var(--bg-color);
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+}
+
+.language-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.language-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.language-level {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.language-bar {
+    height: .8rem;
+    background: var(--second-bg-color);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.language-fill {
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 .8rem var(--main-color);
+}
+
 /* BREAKPOINTS */
 
 @media (max-width: 1200px) {
@@ -395,6 +593,12 @@ span {
         padding: 10rem 3% 2rem;
     }
     .services {
+        padding-bottom: 7rem;
+    }
+    .experiences {
+        padding-bottom: 7rem;
+    }
+    .skills {
         padding-bottom: 7rem;
     }
     .portfolio {
@@ -450,6 +654,9 @@ span {
     }
     .portfolio h2 {
         margin-bottom: 3rem;
+    }
+    .skills-container {
+        grid-template-columns: 1fr;
     }
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);

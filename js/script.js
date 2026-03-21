@@ -46,13 +46,16 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom'});
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .experiences-container, .skills-container, .languages-container', { origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'left'});
+ScrollReveal().reveal('.experience-item', { origin: 'left', interval: 150});
+ScrollReveal().reveal('.skills-category', { origin: 'bottom', interval: 100});
+ScrollReveal().reveal('.language-item', { origin: 'right', interval: 100});
 
 // ========================= typed js =======================
 const typed = new Typed('.multiple-text', {
-    strings: ['Web Developer', 'Youtuber', 'Blogger'],
+    strings: ['IA Developer', 'Data Scientist', 'Web Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     bakDelay: 1000,
