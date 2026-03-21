@@ -429,14 +429,14 @@ span {
 }
 
 .experience-content h3 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     font-weight: 600;
     margin-bottom: .5rem;
 }
 
 .experience-company {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: var(--main-color);
     font-weight: 500;
     margin-bottom: .3rem;
@@ -444,7 +444,7 @@ span {
 
 .experience-date {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: rgba(255, 255, 255, .6);
     margin-bottom: 1rem;
 }
@@ -454,7 +454,7 @@ span {
 }
 
 .experience-content ul li {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     line-height: 1.8;
     color: rgba(255, 255, 255, .85);
 }
@@ -488,7 +488,7 @@ span {
 }
 
 .skills-category h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--main-color);
     margin-bottom: 1.8rem;
     display: flex;
@@ -497,7 +497,7 @@ span {
 }
 
 .skills-category h3 i {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
 }
 
 .skills-tags {
@@ -509,9 +509,9 @@ span {
 .skills-tags span {
     background: var(--bg-color);
     color: var(--text-color);
-    padding: .5rem 1.4rem;
+    padding: .6rem 1.6rem;
     border-radius: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     border: .1rem solid var(--main-color);
     transition: .3s ease;
 }
@@ -553,12 +553,12 @@ span {
 }
 
 .language-name {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .language-level {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: var(--main-color);
     font-weight: 600;
 }
