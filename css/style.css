@@ -308,43 +308,102 @@ span {
 }
 
 .contact h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
+.contact-wrapper {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: flex-start;
 }
 
-.contact form .input-box input,
-.contact form textarea {
+/* --- Colonne gauche : infos --- */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 28rem;
+}
+
+.contact-info-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--second-bg-color);
+    padding: 1.8rem 2rem;
+    border-radius: 1rem;
+    border: .2rem solid transparent;
+    transition: .3s ease;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.contact-info-box:hover {
+    border-color: var(--main-color);
+    transform: translateX(.5rem);
+}
+
+.contact-info-box i {
+    font-size: 3rem;
+    color: var(--main-color);
+    flex-shrink: 0;
+}
+
+.contact-info-box h3 {
+    font-size: 1.7rem;
+    margin-bottom: .2rem;
+}
+
+.contact-info-box p {
+    font-size: 1.4rem;
+    color: rgba(255,255,255,.7);
+}
+
+/* --- Colonne droite : formulaire --- */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-input-row {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact-input-row input {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
     background: var(--second-bg-color);
     border-radius: .8rem;
-    margin: .7rem 0;
+    border: .2rem solid transparent;
+    outline: none;
+    transition: .3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
-.contact form .input-box input {
-    width: 49%;
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--main-color);
 }
 
-.contact form textarea {
-    resize: none;
+.contact-form textarea {
+    resize: vertical;
 }
 
-.contact form .btn {
-    margin-top: 2rem;
+.contact-form .btn {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
 }
 
 .footer {
@@ -660,6 +719,16 @@ span {
     }
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    .contact-info {
+        min-width: unset;
+        width: 100%;
+    }
+    .contact-input-row {
+        flex-direction: column;
     }
 }
 
