@@ -103,6 +103,11 @@ function openModal(box) {
     if (link) {
         modalLink.href  = link;
         modalLink.style.display = 'inline-flex';
+        if (link.includes('github.com')) {
+            modalLink.innerHTML = "<i class='bx bxl-github'></i> Voir le code";
+        } else {
+            modalLink.innerHTML = "<i class='bx bx-link-external'></i> Voir le site";
+        }
     } else {
         modalLink.style.display = 'none';
     }
