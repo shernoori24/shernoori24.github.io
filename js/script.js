@@ -72,6 +72,64 @@ filterBtns.forEach(btn => {
     });
 });
 
+// ========================= portfolio modal =======================
+const modal        = document.getElementById('projectModal');
+const modalClose   = document.getElementById('modalClose');
+const modalImg     = document.getElementById('modalImg');
+const modalTitle   = document.getElementById('modalTitle');
+const modalTags    = document.getElementById('modalTags');
+const modalDesc    = document.getElementById('modalDesc');
+const modalFeatures = document.getElementById('modalFeatures');
+const modalLink    = document.getElementById('modalLink');
+
+function openModal(box) {
+    const title    = box.getAttribute('data-title')    || '';
+    const img      = box.getAttribute('data-img')      || '';
+    const desc     = box.getAttribute('data-desc')     || '';
+    const features = box.getAttribute('data-features') || '';
+    const tags     = box.getAttribute('data-tags')     || '';
+    const link     = box.getAttribute('data-link')     || '';
+
+    modalImg.src         = img;
+    modalImg.alt         = title;
+    modalTitle.textContent = title;
+    modalDesc.textContent  = desc;
+
+    modalTags.innerHTML = tags.split('|').map(t => `<span>${t.trim()}</span>`).join('');
+
+    modalFeatures.innerHTML = features.split('|')
+        .map(f => `<li>${f.trim()}</li>`).join('');
+
+    if (link) {
+        modalLink.href  = link;
+        modalLink.style.display = 'inline-flex';
+    } else {
+        modalLink.style.display = 'none';
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+portfolioBoxes.forEach(box => {
+    box.addEventListener('click', () => openModal(box));
+});
+
+modalClose.addEventListener('click', closeModal);
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+});
+
 // ========================= typed js =======================
 const typed = new Typed('.multiple-text', {
     strings: ['IA Developer', 'Data Scientist', 'Web Developer'],
