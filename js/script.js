@@ -53,6 +53,25 @@ ScrollReveal().reveal('.experience-item', { origin: 'left', interval: 150});
 ScrollReveal().reveal('.skills-category', { origin: 'bottom', interval: 100});
 ScrollReveal().reveal('.language-item', { origin: 'right', interval: 100});
 
+// ========================= portfolio filter ======================
+const filterBtns = document.querySelectorAll('.filter-btn');
+const portfolioBoxes = document.querySelectorAll('.portfolio-box');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        portfolioBoxes.forEach(box => {
+            if (filter === 'all' || box.getAttribute('data-category') === filter) {
+                box.classList.remove('hidden');
+            } else {
+                box.classList.add('hidden');
+            }
+        });
+    });
+});
+
 // ========================= typed js =======================
 const typed = new Typed('.multiple-text', {
     strings: ['IA Developer', 'Data Scientist', 'Web Developer'],

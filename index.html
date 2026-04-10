@@ -231,63 +231,129 @@
     <!-- Section Portfolio -->
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Derniers <span>Projets</span></h2>
+
+        <!-- Filtres -->
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="ia">IA &amp; Data</button>
+            <button class="filter-btn" data-filter="video">Vidéo</button>
+        </div>
+
         <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img width="250" height="190" src="images/plania.png" alt="Plania – Application Flask">
+
+            <div class="portfolio-box" data-category="ia">
+                <div class="portfolio-img">
+                    <img src="images/plania.png" alt="Plania – Application Flask">
+                </div>
                 <div class="portfolio-layer">
-                    <h4>Plania – Application Flask</h4>
                     <p>Gestion d'apprenants, plannings, pointages et modèles ML prédictifs.</p>
                     <a href="https://github.com/shernoori24" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
+                <div class="portfolio-info">
+                    <h4>Plania – Application Flask</h4>
+                    <div class="portfolio-tags">
+                        <span>Flask</span><span>Python</span><span>ML</span>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio-box">
-                <img width="250" height="190" src="images/ecomerce.jpg" alt="">
+
+            <div class="portfolio-box" data-category="web">
+                <div class="portfolio-img">
+                    <img src="images/ecomerce.jpg" alt="Site E-commerce">
+                </div>
                 <div class="portfolio-layer">
-                    <h4>Site E-commerce</h4>
                     <p>Développement d'une plateforme de vente en ligne complète et sécurisée.</p>
                     <a href="https://github.com/shernoori24" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
+                <div class="portfolio-info">
+                    <h4>Site E-commerce</h4>
+                    <div class="portfolio-tags">
+                        <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio-box">
-                <img width="250" height="190" src="images/cuisine.png" alt="">
+
+            <div class="portfolio-box" data-category="web">
+                <div class="portfolio-img">
+                    <img src="images/cuisine.png" alt="Site de Cuisine">
+                </div>
                 <div class="portfolio-layer">
-                    <h4>Site de Cuisine</h4>
                     <p>Gestion de recettes et utilisateurs avec une base de données MySQL et PHP.</p>
                     <a href="https://github.com/shernoori24" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
+                <div class="portfolio-info">
+                    <h4>Site de Cuisine</h4>
+                    <div class="portfolio-tags">
+                        <span>PHP</span><span>MySQL</span><span>HTML/CSS</span>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio-box">
-                <img width="250" height="190" src="images/weather.png" alt="">
+
+            <div class="portfolio-box" data-category="web">
+                <div class="portfolio-img">
+                    <img src="images/weather.png" alt="Météo France">
+                </div>
                 <div class="portfolio-layer">
-                    <h4>Météo France</h4>
                     <p>Application de prévisions météorologiques utilisant des API.</p>
                     <a href="https://github.com/shernoori24" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
+                <div class="portfolio-info">
+                    <h4>Météo France</h4>
+                    <div class="portfolio-tags">
+                        <span>JavaScript</span><span>API REST</span>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio-box">
-                <img width="250" height="190" src="images/bibliotheque.png" alt="">
+
+            <div class="portfolio-box" data-category="web">
+                <div class="portfolio-img">
+                    <img src="images/bibliotheque.png" alt="Bibliothèque">
+                </div>
                 <div class="portfolio-layer">
-                    <h4>Bibliothèque</h4>
                     <p>Système de gestion des livres et des membres avec une base de données robuste.</p>
                     <a href="https://github.com/shernoori24" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
-            </div>
-            <div class="portfolio-box">
-                <img width="250" height="190" src="images/youtube.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Création de Vidéos YouTube</h4>
-                    <p>Production et montage de vidéos YouTube engageantes pour accroître votre audience et visibilité en ligne.</p>
-                    <a href="https://www.youtube.com/@digistep1/videos" target="_blank"><i class='bx bx-link-external'></i></a>
+                <div class="portfolio-info">
+                    <h4>Bibliothèque</h4>
+                    <div class="portfolio-tags">
+                        <span>PHP</span><span>MySQL</span>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img width="250" height="190" src="images/portfolio.png" alt="">
+
+            <div class="portfolio-box" data-category="video">
+                <div class="portfolio-img">
+                    <img src="images/youtube.png" alt="Création de Vidéos YouTube">
+                </div>
                 <div class="portfolio-layer">
-                    <h4>Portfolio Personnel</h4>
+                    <p>Production et montage de vidéos YouTube engageantes pour accroître votre audience.</p>
+                    <a href="https://www.youtube.com/@digistep1/videos" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+                <div class="portfolio-info">
+                    <h4>Création de Vidéos YouTube</h4>
+                    <div class="portfolio-tags">
+                        <span>CapCut</span><span>Montage</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-box" data-category="web">
+                <div class="portfolio-img">
+                    <img src="images/portfolio.png" alt="Portfolio Personnel">
+                </div>
+                <div class="portfolio-layer">
                     <p>Création d'un portfolio en ligne interactif et visuellement attrayant.</p>
                     <a href="https://shernoori24.github.io" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
+                <div class="portfolio-info">
+                    <h4>Portfolio Personnel</h4>
+                    <div class="portfolio-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
