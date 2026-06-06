@@ -140,6 +140,6 @@ const typed = new Typed('.multiple-text', {
     strings: ['IA Developer', 'Data Scientist', 'Web Developer'],
     typeSpeed: 100,
     backSpeed: 100,
-    bakDelay: 1000,
+    backDelay: 1000,
     loop: true
 });
