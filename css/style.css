@@ -8,7 +8,6 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -27,6 +26,8 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9.2rem;
     /* overflow: hidden; */
 }
 
@@ -36,6 +37,7 @@ body {
         radial-gradient(80rem 45rem at -20% 15%, rgba(0, 239, 255, .07), transparent 50%),
         var(--bg-color);
     color: var(--text-color);
+    overscroll-behavior-y: contain;
 }
 
 .sr-only {
@@ -55,6 +57,7 @@ section {
     padding: 10rem 9% 2rem;
     position: relative;
     overflow: hidden;
+    scroll-margin-top: 9.6rem;
 }
 
 .header {
@@ -1395,6 +1398,10 @@ span {
 }
 
 @media (max-width: 991px) {
+    html {
+        scroll-padding-top: 8.6rem;
+    }
+
     .header {
         padding: 2rem 3%;
     }

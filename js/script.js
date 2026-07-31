@@ -3,11 +3,47 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const headerEl = document.querySelector('.header');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
+
+// ============ smooth anchor scroll (desktop + mobile) =========
+function getScrollOffset() {
+    const headerHeight = headerEl ? headerEl.offsetHeight : 0;
+    return headerHeight + 12;
+}
+
+function smoothScrollToHash(hash) {
+    const target = document.querySelector(hash);
+    if (!target) return;
+
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - getScrollOffset();
+    window.scrollTo({
+        top: Math.max(targetTop, 0),
+        behavior: prefersReducedMotion ? 'auto' : 'smooth'
+    });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        const hash = link.getAttribute('href');
+        if (!hash || hash === '#') return;
+
+        const target = document.querySelector(hash);
+        if (!target) return;
+
+        e.preventDefault();
+
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+
+        smoothScrollToHash(hash);
+        history.replaceState(null, '', hash);
+    });
+});
 
 
 // ============ scroll section avtive lint =========
