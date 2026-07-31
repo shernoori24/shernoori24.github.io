@@ -236,6 +236,10 @@ span {
     transform: translateY(-.3rem);
 }
 
+.home .social-media a:hover {
+    box-shadow: 0 .6rem 2.2rem rgba(0, 239, 255, .31);
+}
+
 .btn {
     display: inline-block;
     padding: 1.2rem 2.8rem;
@@ -252,6 +256,10 @@ span {
 .btn:hover {
     transform: translateY(-.25rem);
     box-shadow: 0 1.3rem 2.6rem rgba(0, 239, 255, .3);
+}
+
+.home .btn:hover {
+    box-shadow: 0 1.3rem 2.6rem rgba(0, 239, 255, .27);
 }
 
 .hero-cta {
@@ -1604,7 +1612,7 @@ span {
     }
 
     .home .social-media a:hover {
-        box-shadow: 0 .6rem 2.2rem rgba(0, 239, 255, .27);
+        box-shadow: 0 .6rem 2.2rem rgba(0, 239, 255, .24);
     }
 
     .btn:hover {
@@ -1612,11 +1620,11 @@ span {
     }
 
     .home .btn:hover {
-        box-shadow: 0 1.3rem 2.6rem rgba(0, 239, 255, .24);
+        box-shadow: 0 1.3rem 2.6rem rgba(0, 239, 255, .21);
     }
 
     .logo i {
-        filter: drop-shadow(0 0 .6rem rgba(0, 239, 255, .44));
+        filter: drop-shadow(0 0 .6rem rgba(0, 239, 255, .41));
     }
 
     .filter-btn:hover,
