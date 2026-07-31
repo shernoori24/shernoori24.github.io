@@ -2,6 +2,7 @@
 // ============ toggle icon navbar =========
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
@@ -38,20 +39,22 @@ window.onscroll = () => {
 };
 
 // ========================= scroll reveal =======================
-ScrollReveal({
-    // reset:true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
+if (!prefersReducedMotion && typeof ScrollReveal !== 'undefined') {
+    ScrollReveal({
+        // reset:true,
+        distance: '80px',
+        duration: 2000,
+        delay: 200
+    });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .experiences-container, .skills-container, .languages-container', { origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'left'});
-ScrollReveal().reveal('.experience-item', { origin: 'left', interval: 150});
-ScrollReveal().reveal('.skills-category', { origin: 'bottom', interval: 100});
-ScrollReveal().reveal('.language-item', { origin: 'right', interval: 100});
+    ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
+    ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .experiences-container, .skills-container, .languages-container', { origin: 'bottom'});
+    ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
+    ScrollReveal().reveal('.home-content p, .about-content', { origin: 'left'});
+    ScrollReveal().reveal('.experience-item', { origin: 'left', interval: 150});
+    ScrollReveal().reveal('.skills-category', { origin: 'bottom', interval: 100});
+    ScrollReveal().reveal('.language-item', { origin: 'right', interval: 100});
+}
 
 // ========================= portfolio filter ======================
 const filterBtns = document.querySelectorAll('.filter-btn');
@@ -95,10 +98,18 @@ function openModal(box) {
     modalTitle.textContent = title;
     modalDesc.textContent  = desc;
 
-    modalTags.innerHTML = tags.split('|').map(t => `<span>${t.trim()}</span>`).join('');
+    const tagList = tags
+        .split('|')
+        .map(t => t.trim())
+        .filter(Boolean);
+    modalTags.innerHTML = tagList.map(t => `<span>${t}</span>`).join('');
 
-    modalFeatures.innerHTML = features.split('|')
-        .map(f => `<li>${f.trim()}</li>`).join('');
+    const featureList = features
+        .split('|')
+        .map(f => f.trim())
+        .filter(Boolean);
+    modalFeatures.innerHTML = featureList
+        .map(f => `<li>${f}</li>`).join('');
 
     if (link) {
         modalLink.href  = link;
@@ -136,10 +147,17 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ========================= typed js =======================
-const typed = new Typed('.multiple-text', {
-    strings: ['IA Developer', 'Data Scientist', 'Web Developer'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
+if (!prefersReducedMotion && typeof Typed !== 'undefined') {
+    const typed = new Typed('.multiple-text', {
+        strings: ['IA Developer', 'Data Scientist', 'Web Developer'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+    });
+} else {
+    const multipleText = document.querySelector('.multiple-text');
+    if (multipleText) {
+        multipleText.textContent = 'Développeur IA';
+    }
+}

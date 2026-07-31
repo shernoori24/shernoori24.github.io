@@ -15,9 +15,11 @@
     <title>Portfolio – Sheraqa NOORI</title>
     <meta name="description" content="Portfolio de Sheraqa NOORI — Développeur IA, Data Science & Web. Fondateur de DigiStep. Bac+3 RNCP 36581.">
     <meta name="keywords" content="Sheraqa Noori, développeur web, IA, data science, Flask, Python, portfolio, DigiStep, Charleville-Mézières">
+    <link rel="canonical" href="https://shernoori24.github.io/">
     <meta name="author" content="Sheraqa NOORI">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:title" content="Portfolio – Sheraqa NOORI | Développeur IA & Web">
     <meta property="og:description" content="Développeur IA, Data Science & Web. Fondateur de DigiStep. Découvrez mes projets et compétences.">
     <meta property="og:image" content="https://shernoori24.github.io/images/home1.png">
@@ -27,18 +29,38 @@
     <meta name="twitter:description" content="Développeur IA, Data Science & Web. Fondateur de DigiStep.">
     <meta name="twitter:image" content="https://shernoori24.github.io/images/home1.png">
     <link rel="icon" href="images/icon.png" type="image/png">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Sheraqa NOORI",
+            "url": "https://shernoori24.github.io/",
+            "image": "https://shernoori24.github.io/images/home1.png",
+            "jobTitle": "Développeur IA, Data Science et Web",
+            "email": "mailto:shernoori24@gmail.com",
+            "sameAs": [
+                "https://github.com/shernoori24",
+                "https://www.linkedin.com/in/shernoori24/"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Charleville-Mézières",
+                "addressCountry": "FR"
+            }
+        }
+    </script>
 
     <link rel="stylesheet" href="css/style.css">
     <!-- box icon -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Design du header -->
     <header class="header">
-        <a href="#" class="logo"><i class='bx bx-rocket'></i> DigiStep</a>
+        <a href="#" class="logo"><i class="bx bx-rocket"></i> DigiStep</a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Accueil</a>
@@ -58,13 +80,16 @@
         <div class="home-content">
             <h3>Bonjour, c'est moi</h3>
             <h1>Sheraqa NOORI</h1>
-            <h1>Et je suis <span class="multiple-text"></span></h1>
+            <h2 class="home-role">Et je suis <span class="multiple-text"></span></h2>
             <p>Développeur IA, Data Science & Web — Niv 6 Bac+3 | RNCP 36581.<br>Curieux, autonome et passionné par l'innovation technologique.</p>
             <div class="social-media">
-                <a href="https://github.com/shernoori24" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/shernoori24/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/shernoori24" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/shernoori24/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
             </div>
-            <a href="cv/sheraqa-noori-cv.pdf" class="btn" download>Télécharger CV</a>
+            <div class="hero-cta">
+                <a href="cv/sheraqa-noori-cv.pdf" class="btn" download>Télécharger CV</a>
+                <a href="#portfolio" class="btn btn-secondary">Voir les projets</a>
+            </div>
         </div>
         <div class="home-img">
             <img src="images/home1.png" alt="Sheraqa Noori - Développeur Web" loading="lazy">
@@ -91,7 +116,7 @@
         <div class="experiences-container">
 
             <div class="experience-item">
-                <div class="experience-icon"><i class='bx bx-laptop'></i></div>
+                <div class="experience-icon"><i class="bx bx-laptop"></i></div>
                 <div class="experience-content">
                     <h3>Stagiaire Développement IA &amp; Data Science</h3>
                     <span class="experience-company">Association J'SPR 08 — Charleville-Mézières</span>
@@ -105,7 +130,7 @@
             </div>
 
             <div class="experience-item">
-                <div class="experience-icon"><i class='bx bx-code-alt'></i></div>
+                <div class="experience-icon"><i class="bx bx-code-alt"></i></div>
                 <div class="experience-content">
                     <h3>Stagiaire Développement Web</h3>
                     <span class="experience-company">Association J'SPR 08 — Charleville-Mézières</span>
@@ -119,7 +144,7 @@
             </div>
 
             <div class="experience-item">
-                <div class="experience-icon"><i class='bx bx-store'></i></div>
+                <div class="experience-icon"><i class="bx bx-store"></i></div>
                 <div class="experience-content">
                     <h3>Stagiaire Conseiller Vendeur</h3>
                     <span class="experience-company">Leroy Merlin — Charleville-Mézières</span>
@@ -131,7 +156,7 @@
             </div>
 
             <div class="experience-item">
-                <div class="experience-icon"><i class='bx bx-group'></i></div>
+                <div class="experience-icon"><i class="bx bx-group"></i></div>
                 <div class="experience-content">
                     <h3>Bénévole — Animateur d'Ateliers Sociolinguistiques</h3>
                     <span class="experience-company">Association J'SPR 08 — Charleville-Mézières</span>
@@ -144,7 +169,7 @@
             </div>
 
             <div class="experience-item">
-                <div class="experience-icon"><i class='bx bx-camera'></i></div>
+                <div class="experience-icon"><i class="bx bx-camera"></i></div>
                 <div class="experience-content">
                     <h3>Photographe</h3>
                     <span class="experience-company">Tamadon Photography — Kaboul</span>
@@ -182,41 +207,41 @@
         <h2 class="heading">Mes <span>Compétences</span></h2>
         <div class="skills-container">
             <div class="skills-category">
-                <h3><i class='bx bx-brain'></i> Data Science / IA</h3>
+                <h3><i class="bx bx-brain"></i> Data Science / IA</h3>
                 <div class="skills-tags">
-                    <span><i class='bx bxl-python'></i> Python</span>
-                    <span><i class='bx bx-brain'></i> Machine Learning</span>
-                    <span><i class='bx bx-data'></i> SQL</span>
-                    <span><i class='bx bx-bar-chart-alt-2'></i> Power BI</span>
+                    <span><i class="bx bxl-python"></i> Python</span>
+                    <span><i class="bx bx-brain"></i> Machine Learning</span>
+                    <span><i class="bx bx-data"></i> SQL</span>
+                    <span><i class="bx bx-bar-chart-alt-2"></i> Power BI</span>
                 </div>
             </div>
             <div class="skills-category">
-                <h3><i class='bx bx-code-alt'></i> Développement Web</h3>
+                <h3><i class="bx bx-code-alt"></i> Développement Web</h3>
                 <div class="skills-tags">
-                    <span><i class='bx bxl-html5'></i> HTML</span>
-                    <span><i class='bx bxl-css3'></i> CSS</span>
-                    <span><i class='bx bxl-javascript'></i> JavaScript</span>
-                    <span><i class='bx bxl-php'></i> PHP</span>
-                    <span><i class='bx bx-data'></i> MySQL</span>
-                    <span><i class='bx bxl-react'></i> React</span>
-                    <span><i class='bx bxs-flask'></i> Flask</span>
-                    <span><i class='bx bx-server'></i> Django</span>
+                    <span><i class="bx bxl-html5"></i> HTML</span>
+                    <span><i class="bx bxl-css3"></i> CSS</span>
+                    <span><i class="bx bxl-javascript"></i> JavaScript</span>
+                    <span><i class="bx bxl-php"></i> PHP</span>
+                    <span><i class="bx bx-data"></i> MySQL</span>
+                    <span><i class="bx bxl-react"></i> React</span>
+                    <span><i class="bx bxs-flask"></i> Flask</span>
+                    <span><i class="bx bx-server"></i> Django</span>
                 </div>
             </div>
             <div class="skills-category">
-                <h3><i class='bx bx-wrench'></i> Outils &amp; Méthodes</h3>
+                <h3><i class="bx bx-wrench"></i> Outils &amp; Méthodes</h3>
                 <div class="skills-tags">
-                    <span><i class='bx bxl-git'></i> Git / GitHub</span>
-                    <span><i class='bx bxl-visual-studio'></i> VS Code</span>
-                    <span><i class='bx bx-refresh'></i> Méthodologies Agiles</span>
+                    <span><i class="bx bxl-git"></i> Git / GitHub</span>
+                    <span><i class="bx bxl-visual-studio"></i> VS Code</span>
+                    <span><i class="bx bx-refresh"></i> Méthodologies Agiles</span>
                 </div>
             </div>
             <div class="skills-category">
-                <h3><i class='bx bxs-star'></i> Soft Skills</h3>
+                <h3><i class="bx bxs-star"></i> Soft Skills</h3>
                 <div class="skills-tags">
-                    <span><i class='bx bx-user-check'></i> Autonomie</span>
-                    <span><i class='bx bx-bulb'></i> Créativité technique</span>
-                    <span><i class='bx bx-group'></i> Esprit d'équipe</span>
+                    <span><i class="bx bx-user-check"></i> Autonomie</span>
+                    <span><i class="bx bx-bulb"></i> Créativité technique</span>
+                    <span><i class="bx bx-group"></i> Esprit d'équipe</span>
                 </div>
             </div>
         </div>
@@ -227,27 +252,27 @@
         <h2 class="heading">Mes <span>Services</span></h2>
         <div class="services-container">
             <div class="services-box">
-                <i class='bx bx-code-alt'></i>
+                <i class="bx bx-code-alt"></i>
                 <h3>Développement Web</h3>
                 <p>Création de sites web modernes et réactifs : HTML, CSS, JavaScript, PHP, React, Django.</p>
             </div>
             <div class="services-box">
-                <i class='bx bx-brain'></i>
+                <i class="bx bx-brain"></i>
                 <h3>Intelligence Artificielle &amp; Data Science</h3>
                 <p>Modèles ML prédictifs, analyse de données, pipelines Python et Power BI.</p>
             </div>
             <div class="services-box">
-                <i class='bx bx-bar-chart-alt'></i>
+                <i class="bx bx-bar-chart-alt"></i>
                 <h3>Analyse de Données &amp; Dashboards</h3>
                 <p>Visualisation interactive, SQL, Flask et dashboards analytiques sur mesure.</p>
             </div>
             <div class="services-box">
-                <i class='bx bxs-videos'></i>
+                <i class="bx bxs-videos"></i>
                 <h3>Montage Vidéo</h3>
                 <p>Création et édition de vidéos captivantes avec CapCut pour vos projets personnels et professionnels.</p>
             </div>
             <div class="services-box">
-                <i class='bx bx-rocket'></i>
+                <i class="bx bx-rocket"></i>
                 <h3>DigiStep — Micro-Entreprise</h3>
                 <p>Fondateur de DigiStep : création de contenus digitaux, vidéos YouTube sur le dev web & la tech, et services web pour entrepreneurs.</p>
             </div>
@@ -271,8 +296,8 @@
             <div class="portfolio-box" data-category="ia"
                 data-title="Plania – Application Flask"
                 data-img="images/plania.png"
-                data-desc="Application web développée en Flask pour l’Association J’SPR 08. Elle permet la gestion complète des apprenants avec suivi des plannings, pointages et absences, et intègre des modèles Machine Learning pour prédire les inscriptions et analyser les tendances temporelles."
-                data-features="Gestion des apprenants et formations|Plannings et pointages automatisés|Dashboard analytique interactif|Modèles ML prédictifs (analyse temporelle)|Export de données"
+                data-desc="Rôle: Développeur IA & web. Conception d'une application Flask métier pour centraliser la gestion des apprenants, des plannings et des pointages, avec un module ML pour anticiper les tendances d'inscription."
+                data-features="Rôle: Développeur full-stack IA|Architecture Flask orientée modules métier|Gestion apprenants, formations et présences|Dashboard analytique pour pilotage opérationnel|Modèles prédictifs sur données temporelles|Export de données pour suivi interne"
                 data-tags="Flask|Python|Machine Learning|SQL|HTML/CSS"
                 data-link="">
                 <div class="portfolio-img">
@@ -292,8 +317,8 @@
             <div class="portfolio-box" data-category="web"
                 data-title="J'SPR 08 – Site Web Associatif"
                 data-img="images/jspr08.png"
-                data-desc="Application web full-stack développée pour une association, permettant la gestion complète du contenu et de la communication. Architecture MVC en PHP 8 avec back-office complet, newsletter automatisée et tableau de bord statistiques."
-                data-features="Agenda événements avec envoi automatique d'e-mails aux abonnés|Journal des activités avec gestion d'articles et images|Newsletter avec inscription / désinscription et envoi groupé|FAQ dynamique gérée depuis le back-office|Tableau de bord admin avec statistiques des visiteurs|Authentification admin avec gestion des rôles (admin / rédacteur)"
+                data-desc="Rôle: Développeur web full-stack. Réalisation d'une plateforme associative administrable pour publier, informer et animer la communauté via un back-office, une newsletter et des statistiques."
+                data-features="Rôle: Développeur full-stack PHP|Architecture MVC PHP 8 et base MySQL|Back-office de gestion éditoriale complet|Newsletter avec gestion des abonnements|FAQ et agenda pilotés par l'administration|Tableau de bord avec indicateurs de fréquentation|Gestion des rôles admin et rédacteur"
                 data-tags="PHP 8|MVC|MySQL|JavaScript|Bootstrap 5|PHPMailer|AJAX"
                 data-link="https://jspr08.fr">
                 <div class="portfolio-img">
@@ -313,8 +338,8 @@
             <div class="portfolio-box" data-category="ia"
                 data-title="MSP – Pandemic Surveillance Platform"
                 data-img="images/msp.png"
-                data-desc="Plateforme de surveillance épidémique full-stack développée en équipe de 6 personnes en 6 semaines (méthode Agile/Scrum). Ingestion des données COVID-19 réelles de Johns Hopkins University via pipeline ETL, visualisation dans un dashboard React interactif et modèles ML prédictifs intégrés."
-                data-features="Dashboard interactif : carte choroplèthe mondiale, graphiques, filtres pays/région/date|Pipeline ETL automatisé (données réelles Johns Hopkins University)|2 modèles ML : prédiction de mortalité (Random Forest) + clustering géographique|API REST sécurisée avec authentification JWT et gestion des rôles|Conteneurisation complète Docker + Docker Compose|Export CSV, Swagger UI, throttling API|Tests E2E Cypress (7 scénarios)|Travail en équipe : Git collaboratif, branches feature, pull requests, Agile Scrum"
+                data-desc="Projet d'équipe (6 personnes, 6 semaines) en mode Agile/Scrum. Développement d'une plateforme data pour surveiller l'évolution COVID-19, visualiser les indicateurs clés et tester des modèles prédictifs."
+                data-features="Rôle: Développeur IA/data en équipe|Pipeline ETL sur données Johns Hopkins|Dashboard React interactif avec filtres avancés|Modèles ML de prédiction et de clustering|API REST sécurisée (JWT, rôles)|Déploiement conteneurisé avec Docker Compose|Qualité logicielle via tests E2E Cypress"
                 data-tags="React|Django|PostgreSQL|scikit-learn|Docker|Python|JWT|D3.js"
                 data-link="">
                 <div class="portfolio-img">
@@ -334,8 +359,8 @@
             <div class="portfolio-box" data-category="web"
                 data-title="Site E-commerce"
                 data-img="images/ecomerce.jpg"
-                data-desc="Plateforme de vente en ligne complète avec gestion de catalogue produits, panier d’achat, système de commandes et espace administrateur pour la gestion du contenu."
-                data-features="Catalogue produits dynamique|Panier d’achat et commandes|Espace client et administrateur|Gestion des stocks|Interface responsive"
+                data-desc="Rôle: Développeur back-end PHP/MySQL. Création d'un socle e-commerce complet pour gérer produits, panier, commandes et administration, avec une interface claire côté utilisateur."
+                data-features="Rôle: Développeur web back-end|Catalogue dynamique et navigation produit|Panier et tunnel de commande|Espace client et espace administrateur|Gestion des stocks et du contenu|Interface responsive multi-écran"
                 data-tags="PHP|MySQL|JavaScript|HTML/CSS"
                 data-link="https://github.com/shernoori24/e_commerce_back">
                 <div class="portfolio-img">
@@ -355,8 +380,8 @@
             <div class="portfolio-box" data-category="web"
                 data-title="Site de Cuisine"
                 data-img="images/cuisine.png"
-                data-desc="Site web dédié à la gestion et au partage de recettes de cuisine. Les utilisateurs peuvent s’inscrire, publier leurs recettes et explorer celles des autres membres."
-                data-features="Catalogue de recettes|Création de compte utilisateur|Ajout et gestion de recettes|Recherche par catégorie|Back-office d’administration"
+                data-desc="Rôle: Développeur web. Conception d'une plateforme communautaire de recettes avec gestion des comptes, publication de contenu et administration éditoriale."
+                data-features="Rôle: Développeur full-stack PHP|Publication et gestion de recettes utilisateurs|Comptes membres et parcours d'inscription|Recherche par catégories culinaires|Back-office d'administration des contenus"
                 data-tags="PHP|MySQL|HTML/CSS"
                 data-link="https://github.com/shernoori24/recette_cuisine">
                 <div class="portfolio-img">
@@ -376,8 +401,8 @@
             <div class="portfolio-box" data-category="web"
                 data-title="Météo France"
                 data-img="images/weather.png"
-                data-desc="Application météo développée en PHP qui interroge une API météo côté serveur pour afficher les prévisions en temps réel. L'utilisateur peut rechercher une ville et consulter les données météo détaillées avec une interface HTML/CSS responsive."
-                data-features="Recherche par ville|Prévisions en temps réel|Appel API météo via PHP|Affichage des icônes météo|Interface responsive HTML/CSS"
+                data-desc="Rôle: Développeur web. Réalisation d'une application météo connectée à une API externe, avec recherche rapide par ville et affichage lisible des prévisions en temps réel."
+                data-features="Rôle: Développeur intégration API|Appels serveur PHP vers API météo|Recherche par ville et rendu dynamique|Affichage des indicateurs météo essentiels|Interface responsive orientée usage mobile"
                 data-tags="PHP|API REST|HTML|CSS"
                 data-link="https://github.com/shernoori24/meteo_france">
                 <div class="portfolio-img">
@@ -397,8 +422,8 @@
             <div class="portfolio-box" data-category="web"
                 data-title="Bibliothèque"
                 data-img="images/bibliotheque.png"
-                data-desc="Système de gestion de bibliothèque permettant d’administrer les livres, les membres et les emprunts. Interface simple et efficace pour suivre les retours et les disponibilités."
-                data-features="Gestion du catalogue de livres|Gestion des membres|Suivi des emprunts et retours|Recherche et filtres|Interface administrateur"
+                data-desc="Rôle: Développeur web en collaboration. Mise en place d'un outil de gestion de bibliothèque pour suivre le catalogue, les membres et le cycle des emprunts/retours."
+                data-features="Rôle: Développement collaboratif|Gestion du catalogue et des disponibilités|Suivi des membres et des emprunts|Traçabilité des retours|Recherche et filtres pour la gestion quotidienne"
                 data-tags="PHP|MySQL|HTML/CSS"
                 data-link="https://github.com/Mel-Beth/bibliotheque_baillac">
                 <div class="portfolio-img">
@@ -418,8 +443,8 @@
             <div class="portfolio-box" data-category="video"
                 data-title="Création de Vidéos YouTube"
                 data-img="images/youtube.png"
-                data-desc="Création et montage de vidéos pour la chaîne DigiStep, axée sur le développement web, la technologie et la veille informatique pour aider les débutants."
-                data-features="Montage vidéo professionnel|Création de miniatures|Script et narration|Optimisation SEO YouTube"
+                data-desc="Rôle: Créateur de contenu DigiStep. Production de vidéos pédagogiques tech (script, montage, publication) pour vulgariser le développement web et la veille numérique."
+                data-features="Rôle: Créateur et monteur vidéo|Workflow complet de production YouTube|Scripts pédagogiques orientés débutants|Conception de miniatures et habillage visuel|Optimisation SEO des publications"
                 data-tags="CapCut|Montage|YouTube"
                 data-link="https://www.youtube.com/@digistep1/videos">
                 <div class="portfolio-img">
@@ -439,8 +464,8 @@
             <div class="portfolio-box" data-category="web"
                 data-title="Portfolio Personnel"
                 data-img="images/portfolio.png"
-                data-desc="Portfolio en ligne personnel présentant mes compétences, expériences et projets. Conçu avec une interface moderne, des animations fluides et un design responsive."
-                data-features="Design moderne et responsive|Animations ScrollReveal|Texte animé Typed.js|Formulaire de contact Formspree|Filtre de projets interactif|Modale de détail par projet"
+                data-desc="Rôle: Product designer et développeur front-end. Conception d'un portfolio orienté conversion pour présenter compétences, expériences et projets avec une navigation fluide."
+                data-features="Rôle: Design UI + développement front-end|Architecture one-page claire et responsive|Système de filtres projets et modale détaillée|Animations maîtrisées pour renforcer l'expérience|Formulaire de contact et téléchargement PDF"
                 data-tags="HTML|CSS|JavaScript"
                 data-link="https://shernoori24.github.io">
                 <div class="portfolio-img">
@@ -498,41 +523,46 @@
 
     <!-- Section Contact -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contactez <span>Moi!</span></h2>
+        <h2 class="heading">Contactez-<span>moi</span></h2>
+        <p class="contact-intro">Une idée, une mission ou une collaboration ? Écrivez-moi, je vous réponds rapidement.</p>
         <div class="contact-wrapper">
 
             <!-- Infos -->
             <div class="contact-info">
+                <div class="contact-status">
+                    <span class="contact-status-dot"></span>
+                    Disponible pour missions et alternance
+                </div>
                 <a href="mailto:shernoori24@gmail.com" class="contact-info-box">
-                    <i class='bx bx-envelope'></i>
+                    <i class="bx bx-envelope"></i>
                     <div>
                         <h3>Email</h3>
                         <p>shernoori24@gmail.com</p>
                     </div>
                 </a>
                 <div class="contact-info-box">
-                    <i class='bx bx-map'></i>
+                    <i class="bx bx-map"></i>
                     <div>
                         <h3>Localisation</h3>
                         <p>Charleville-Mézières, France</p>
                     </div>
                 </div>
-                <a href="https://www.linkedin.com/in/shernoori24/" target="_blank" class="contact-info-box">
-                    <i class='bx bxl-linkedin'></i>
+                <a href="https://www.linkedin.com/in/shernoori24/" target="_blank" rel="noopener noreferrer" class="contact-info-box">
+                    <i class="bx bxl-linkedin"></i>
                     <div>
                         <h3>LinkedIn</h3>
                         <p>linkedin.com/in/shernoori24</p>
                     </div>
                 </a>
-                <a href="https://github.com/shernoori24" target="_blank" class="contact-info-box">
-                    <i class='bx bxl-github'></i>
+                <a href="https://github.com/shernoori24" target="_blank" rel="noopener noreferrer" class="contact-info-box">
+                    <i class="bx bxl-github"></i>
                     <div>
                         <h3>GitHub</h3>
                         <p>github.com/shernoori24</p>
                     </div>
                 </a>
-                <a href="https://wa.me/33605509895" target="_blank" class="contact-info-box">
-                    <i class='bx bxl-whatsapp'></i>
+                <a href="https://wa.me/33605509895" target="_blank" rel="noopener noreferrer" class="contact-info-box">
+                    <i class="bx bxl-whatsapp"></i>
                     <div>
                         <h3>WhatsApp</h3>
                         <p>+33 6 05 50 98 95</p>
@@ -542,14 +572,22 @@
 
             <!-- Formulaire Formspree -->
             <form class="contact-form" action="https://formspree.io/f/mojpkvrq" method="POST">
+                <div class="contact-form-head">
+                    <h3>Parlons de votre projet</h3>
+                    <p>Réponse moyenne sous 24h</p>
+                </div>
                 <input type="hidden" name="_subject" value="Message depuis le portfolio de Sheraqa NOORI">
                 <div class="contact-input-row">
-                    <input type="text" name="nom" placeholder="Nom complet" required>
-                    <input type="email" name="email" placeholder="Votre email" required>
+                    <label class="sr-only" for="contact-nom">Nom complet</label>
+                    <input id="contact-nom" type="text" name="nom" placeholder="Nom complet" autocomplete="name" required>
+                    <label class="sr-only" for="contact-email">Votre email</label>
+                    <input id="contact-email" type="email" name="email" placeholder="Votre email" autocomplete="email" required>
                 </div>
-                <input type="text" name="objet" placeholder="Objet" required>
-                <textarea name="message" rows="7" placeholder="Votre message..." required></textarea>
-                <button type="submit" class="btn">Envoyer le message <i class='bx bx-send'></i></button>
+                <label class="sr-only" for="contact-objet">Objet</label>
+                <input id="contact-objet" type="text" name="objet" placeholder="Objet" autocomplete="off" required>
+                <label class="sr-only" for="contact-message">Votre message</label>
+                <textarea id="contact-message" name="message" rows="7" placeholder="Votre message..." required></textarea>
+                <button type="submit" class="btn">Envoyer le message <i class="bx bx-send"></i></button>
             </form>
 
         </div>
@@ -558,15 +596,15 @@
     <!-- Modale Projet -->
     <div class="modal-overlay" id="projectModal">
         <div class="modal-content">
-            <button class="modal-close" id="modalClose"><i class='bx bx-x'></i></button>
-            <img class="modal-img" id="modalImg" src="" alt="">
+            <button class="modal-close" id="modalClose"><i class="bx bx-x"></i></button>
+            <img class="modal-img" id="modalImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Aperçu du projet">
             <div class="modal-body">
                 <h3 class="modal-title" id="modalTitle"></h3>
                 <div class="modal-tags" id="modalTags"></div>
                 <p class="modal-desc" id="modalDesc"></p>
                 <ul class="modal-features" id="modalFeatures"></ul>
                 <a class="btn modal-btn" id="modalLink" href="" target="_blank" rel="noopener noreferrer">
-                    <i class='bx bxl-github'></i> Voir le code
+                    <i class="bx bxl-github"></i> Voir le code
                 </a>
             </div>
         </div>
@@ -574,7 +612,7 @@
 
     <!-- Bouton téléchargement PDF Portfolio -->
     <button type="button" class="btn-download-pdf" id="downloadPortfolio" title="Télécharger le portfolio en PDF" aria-label="Télécharger le portfolio en PDF">
-        <i class='bx bx-download'></i>
+        <i class="bx bx-download"></i>
         <span>Télécharger portfolio</span>
     </button>
 
@@ -585,10 +623,10 @@
             <p>Copyright &copy; 2026 par Sheraqa Noori | Tous droits réservés.</p>
         </div>
         <!-- <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
         </div> -->
         <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
         </div>
     </footer>
 
@@ -611,3 +649,4 @@
 </body>
 
 </html>
+
