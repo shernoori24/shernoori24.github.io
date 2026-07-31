@@ -4,17 +4,20 @@
 
 document.getElementById('downloadPortfolio').addEventListener('click', generatePDF);
 
+const PDF_BUTTON_DEFAULT_TEXT = 'Télécharger portfolio';
+const PDF_BUTTON_LOADING_TEXT = 'Génération...';
+
 function generatePDF() {
     const btn = document.getElementById('downloadPortfolio');
     btn.classList.add('loading');
-    btn.querySelector('span').textContent = 'Génération...';
+    btn.querySelector('span').textContent = PDF_BUTTON_LOADING_TEXT;
 
     setTimeout(() => {
         try {
             buildPDF();
         } finally {
             btn.classList.remove('loading');
-            btn.querySelector('span').textContent = 'Portfolio PDF';
+            btn.querySelector('span').textContent = PDF_BUTTON_DEFAULT_TEXT;
         }
     }, 100);
 }
