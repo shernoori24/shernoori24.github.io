@@ -42,18 +42,22 @@ window.onscroll = () => {
 if (!prefersReducedMotion && typeof ScrollReveal !== 'undefined') {
     ScrollReveal({
         // reset:true,
-        distance: '80px',
-        duration: 2000,
-        delay: 200
+        distance: '42px',
+        duration: 900,
+        delay: 90,
+        opacity: 0,
+        scale: 0.985,
+        easing: 'cubic-bezier(0.22, 0.61, 0.36, 1)'
     });
 
     ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
     ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .experiences-container, .skills-container, .languages-container', { origin: 'bottom'});
     ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
     ScrollReveal().reveal('.home-content p, .about-content', { origin: 'left'});
-    ScrollReveal().reveal('.experience-item', { origin: 'left', interval: 150});
-    ScrollReveal().reveal('.skills-category', { origin: 'bottom', interval: 100});
-    ScrollReveal().reveal('.language-item', { origin: 'right', interval: 100});
+    ScrollReveal().reveal('.services-box', { origin: 'bottom', interval: 85, distance: '28px' });
+    ScrollReveal().reveal('.experience-item', { origin: 'left', interval: 95, distance: '32px' });
+    ScrollReveal().reveal('.skills-category', { origin: 'bottom', interval: 75, distance: '26px' });
+    ScrollReveal().reveal('.language-item', { origin: 'right', interval: 75, distance: '24px' });
 }
 
 // ========================= portfolio filter ======================
@@ -150,8 +154,8 @@ document.addEventListener('keydown', (e) => {
 if (!prefersReducedMotion && typeof Typed !== 'undefined') {
     const typed = new Typed('.multiple-text', {
         strings: ['IA Developer', 'Data Scientist', 'Web Developer'],
-        typeSpeed: 100,
-        backSpeed: 100,
+        typeSpeed: 86,
+        backSpeed: 64,
         backDelay: 1000,
         loop: true
     });
